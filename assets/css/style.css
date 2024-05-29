@@ -73,7 +73,7 @@ p {
 
 .btn {
   background: #333;
-  border: medium none;
+  border: 2px solid #333;
   border-radius: 0;
   color: #fff;
   font-size: 12px;
@@ -83,9 +83,18 @@ p {
   text-transform: uppercase;
 }
 
+.rounded-sm {
+  border-radius: 12px;
+}
+
+.rounded-md {
+  border-radius: 25px;
+}
+
 .btn:hover,
 .btn:focus {
-  color: #fff;
+  color: #333;
+  border: 2px solid #333;
 }
 
 .padDiv {
