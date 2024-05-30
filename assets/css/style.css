@@ -1618,3 +1618,58 @@ blockquote {
   color: white;
   transition: all 0.3s ease-in-out;
 }
+
+.contact-us {
+  border-radius: 12px;
+  border: 2px solid black;
+  padding: 24px;
+  background-color: #333;
+}
+
+.contact-us h2,
+.contact-us h4 {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+  padding: 10px;
+}
+
+.contact-us h4 {
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
+.contact-us .contact-detail {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 10px;
+  /* Add gap for spacing between items */
+}
+
+.contact-us > .contact-detail > div {
+  flex: 1 1 calc(33.333% - 20px);
+  min-width: 250px;
+  padding: 10px;
+  background-color: #444;
+  color: white;
+  border: 2px solid white;
+  border-style: dashed;
+  border-radius: 8px;
+  position: relative;
+  margin: 20px;
+}
+.contact-us .contact-detail .padded-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+}
