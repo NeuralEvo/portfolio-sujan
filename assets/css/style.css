@@ -473,7 +473,7 @@ p {
 }
 
 .hero-content h1 {
-  font-size: 40px;
+  font-size: 60px;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -481,7 +481,7 @@ p {
 }
 
 .hero-content p {
-  font-size: 13px;
+  font-size: 23px;
   letter-spacing: 3px;
   margin-top: 0;
   margin-bottom: 30px;
@@ -497,7 +497,7 @@ p {
 
 .hero-content .list-social li i {
   color: #fff;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 /*--------------------------------------------------------------
@@ -1553,4 +1553,68 @@ blockquote {
     display: inline-block;
     margin-right: 0;
   }
+}
+
+/* custom for technical overview */
+
+.overview-section .technical-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.overview-section .image-container,
+.overview-section .text-container {
+  flex: 1 1 calc(33.333% - 20px); /* Flex-grow: 1, Flex-shrink: 1, Flex-basis: 33.333% minus the gap */
+  min-width: 250px; /* Ensures elements don't get too small */
+}
+
+.overview-section .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 50px;
+  width: 50px;
+}
+
+.overview-section .image-container img {
+  height: 100%;
+  border-radius: 10px;
+  object-fit: contain; /* Ensures the image covers the container proportionally */
+}
+
+.overview-section .text-container {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.overview-section .text-container:hover {
+  background-color: #b8a07e;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.overview-section .text-container h4 {
+  font-size: 20px;
+  color: #b8a07e;
+  margin-top: 20px;
+}
+.overview-section .text-container p {
+  margin: 10px 0px;
+  color: #333;
+  letter-spacing: normal;
+}
+
+.overview-section .text-container:hover p {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.overview-section .text-container:hover h4 {
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
