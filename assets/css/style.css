@@ -481,9 +481,10 @@ p {
 }
 
 .hero-content p {
-  font-size: 23px;
-  letter-spacing: 3px;
+  font-size: 18px;
+  letter-spacing: 1.5px;
   margin-top: 0;
+  max-width: 400px;
   margin-bottom: 30px;
   text-transform: capitalize;
   color: #fff;
@@ -1672,4 +1673,64 @@ blockquote {
   width: 50px;
   border-radius: 50%;
   background-color: white;
+}
+
+.vertical-floating-navbar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  z-index: 10;
+}
+.vertical-floating-navbar:hover {
+  width: 250px;
+  overflow: hidden;
+}
+.parent-navlink {
+  position: relative;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+.rounded-navlink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #6772e5;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.link-text {
+  position: absolute;
+  width: 0px;
+  top: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #6772e5;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  padding-left: 50px;
+  padding-right: 30px;
+  visibility: hidden;
+  transform: translateX(-101%);
+  transition: transform 0.5s ease;
+}
+
+.link-text a {
+  color: inherit;
+}
+
+.parent-navlink:hover .link-text {
+  transform: translateX(0);
+  visibility: visible;
+  width: max-content;
+}
+.parent-navlink:hover .rounded-navlink {
 }
