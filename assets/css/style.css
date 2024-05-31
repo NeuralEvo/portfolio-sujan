@@ -1634,6 +1634,7 @@ blockquote {
   letter-spacing: 1.5px;
   word-spacing: 5px;
   padding: 10px;
+  word-break: break-all;
 }
 
 .contact-us h4 {
@@ -1733,4 +1734,10 @@ blockquote {
   width: max-content;
 }
 .parent-navlink:hover .rounded-navlink {
+}
+
+@media only screen and (max-width: 600px) {
+  .vertical-floating-navbar {
+    display: none;
+  }
 }
