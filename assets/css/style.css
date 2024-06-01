@@ -669,12 +669,12 @@ p {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-#portfolio {
+#certification {
   position: relative;
   padding-bottom: 50px;
 }
 
-#portfolio #portfolio-flters {
+#certification #portfolio-flters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
@@ -683,7 +683,7 @@ p {
   padding: 2px 15px;
 }
 
-#portfolio #portfolio-flters li {
+#certification #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -696,20 +696,20 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio #portfolio-flters li:hover,
-#portfolio #portfolio-flters li.filter-active {
+#certification #portfolio-flters li:hover,
+#certification #portfolio-flters li.filter-active {
   color: #b8a07e;
 }
 
-#portfolio #portfolio-flters li:last-child {
+#certification #portfolio-flters li:last-child {
   margin-right: 0;
 }
 
-#portfolio .portfolio-item {
+#certification .portfolio-item {
   margin-bottom: 30px;
 }
 
-#portfolio .portfolio-item .portfolio-info {
+#certification .portfolio-item .portfolio-info {
   opacity: 0;
   position: absolute;
   left: 30px;
@@ -721,22 +721,22 @@ p {
   padding: 15px;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 {
+#certification .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   color: #666;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-#portfolio .portfolio-item .portfolio-info p {
+#certification .portfolio-item .portfolio-info p {
   color: #999;
   font-size: 14px;
   margin: 0;
   padding: 0;
 }
 
-#portfolio .portfolio-item .portfolio-info .preview-link,
-#portfolio .portfolio-item .portfolio-info .details-link {
+#certification .portfolio-item .portfolio-info .preview-link,
+#certification .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 40px;
   font-size: 24px;
@@ -744,16 +744,16 @@ p {
   color: #b8a07e;
 }
 
-#portfolio .portfolio-item .portfolio-info .preview-link:hover,
-#portfolio .portfolio-item .portfolio-info .details-link:hover {
+#certification .portfolio-item .portfolio-info .preview-link:hover,
+#certification .portfolio-item .portfolio-info .details-link:hover {
   color: #cab89f;
 }
 
-#portfolio .portfolio-item .portfolio-info .details-link {
+#certification .portfolio-item .portfolio-info .details-link {
   right: 10px;
 }
 
-#portfolio .portfolio-item:hover .portfolio-info {
+#certification .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 20px;
 }
@@ -1757,8 +1757,6 @@ blockquote {
   transform: translateX(0);
   visibility: visible;
   width: max-content;
-}
-.parent-navlink:hover .rounded-navlink {
 }
 
 @media only screen and (max-width: 600px) {
