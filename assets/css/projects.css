@@ -4,7 +4,7 @@
   background: #fff;
 }
 
-.project {
+.project-container .project {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -12,7 +12,7 @@
   margin: 2rem 0rem;
 }
 
-.project.alternate .project-content {
+.project-container .project.alternate .project-content {
   justify-content: flex-end;
   background-color: #ffe0b2;
   padding: 1rem;
@@ -21,7 +21,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.project-image img {
+.project-container .project-image img {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -29,35 +29,35 @@
   margin-right: 1rem;
 }
 
-.project.alternate .project-image img {
+.project-container .project.alternate .project-image img {
   margin-right: 0;
   margin-left: 1rem;
 }
 
-.project-content {
+.project-container .project-content {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 5px;
   max-width: 800px;
 }
 
-.project h3 {
+.project-container .project h3 {
   color: #333;
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-.project p {
+.project-container .project p {
   color: #333;
   margin: 0.5rem 0;
 }
 
-.project ul {
+.project-container .project ul {
   list-style-type: disc;
   margin: 0.5rem 0 0 1.5rem;
 }
 
-.project ul li {
+.project-container .project ul li {
   color: #333;
   margin-bottom: 0.5rem;
 }
