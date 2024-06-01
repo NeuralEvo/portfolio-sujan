@@ -28,6 +28,8 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/timeline.css" rel="stylesheet">
+  <link href="assets/css/projects.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,62 +40,73 @@
 <body>
 
   <nav class="vertical-floating-navbar">
-    <div class="parent-navlink">
-      <div class="rounded-navlink">
-        <i class="fa-solid fa-house" style="font-size: 14px;"></i>
-      </div>
-      <div class="link-text">
-        <a href="#home">Home</a>
-      </div>
+    <a href="#home">
+      <div class="parent-navlink">
+        <div class="rounded-navlink">
+          <i class="fa-solid fa-house" style="font-size: 14px;"></i>
+        </div>
+        <div class="link-text">
+          Home
+        </div>
+    </a>
     </div>
     <div class="parent-navlink">
-      <div class="rounded-navlink">
-        <i class="fa-solid fa-user" style="font-size: 14px;"></i>
-      </div>
-      <div class="link-text">
-        <a href="#about">About</a>
-      </div>
+      <a href="#about">
+        <div class="rounded-navlink">
+          <i class="fa-solid fa-user" style="font-size: 14px;"></i>
+        </div>
+        <div class="link-text">
+          About
+        </div>
+      </a>
     </div>
     <div class="parent-navlink">
-      <div class="rounded-navlink">
-        <i class="fa-solid fa-school" style="font-size: 14px;"></i>
-      </div>
-      <div class="link-text">
-        <a href="#education">Education</a>
-      </div>
+      <a href="#education">
+        <div class="rounded-navlink">
+          <i class="fa-solid fa-school" style="font-size: 14px;"></i>
+        </div>
+        <div class="link-text">
+          Education
+        </div>
+      </a>
     </div>
     <div class="parent-navlink">
-      <div class="rounded-navlink">
-        <i class="fa-solid fa-file" style="font-size: 14px;"></i>
-      </div>
-      <div class="link-text">
-        <a href="#certification">Certifications</a>
-      </div>
+      <a href="#certification">
+        <div class="rounded-navlink">
+          <i class="fa-solid fa-file" style="font-size: 14px;"></i>
+        </div>
+        <div class="link-text">
+          Certifications
+        </div>
+      </a>
     </div>
 
     <div class="parent-navlink">
-      <div class="rounded-navlink">
-        <i class="fa-solid fa-envelope" style="font-size: 14px;"></i>
-      </div>
-      <div class="link-text">
-        <a href="#contact_me">Contact</a>
-      </div>
+      <a href="#contact_me">
+        <div class="rounded-navlink">
+          <i class="fa-solid fa-envelope" style="font-size: 14px;"></i>
+        </div>
+        <div class="link-text">
+          Contact
+        </div>
     </div>
+    </a>
   </nav>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top " id="home">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo">SUJAN SILWAL</a> -->
+      <a href="index.html" class="logo"
+        style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SUJAN SILWAL</a>
       <!-- Uncomment below if you prefer to use an text logo -->
-      <h1 class="logo"><a href="index.html">SUJAN SILWAL</a></h1>
+      <!-- <h1 class="logo"><a href="index.html">SUJAN SILWAL</a></h1> -->
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link  scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link  scrollto" href="#certification">Certification</a></li>
           <li><a class="nav-link  scrollto" href="#journal">Blog</a></li>
           <li><a class="nav-link scrollto" href="#contact_me">Contact</a></li>
         </ul>
@@ -121,10 +134,10 @@
     </div>
   </div><!-- End Hero -->
 
-  <main id="main">
+  <main>
 
     <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
+    <div class="paddsection" id="about">
       <div class="container">
         <div class="row justify-content-between">
 
@@ -137,7 +150,9 @@
           </div>
 
           <div class="col-lg-7">
-            <div>
+            <div class="about-descr">
+              <p class="p-heading" style="color: #292929;font-weight: 500;font-size: 40px;">About Me</p>
+
               <p style="color: #292929;font-weight: 500;">I am a civil engineer passionate about creating functional and
                 visually appealing
                 designs. With around 3 years of
@@ -161,6 +176,8 @@
     <!-- ======= Services Section ======= -->
     <div id="services">
       <div class="container">
+        <p class="p-heading"
+          style="color: #292929;font-weight: 500;font-size: 40px;padding: 60px 0px;text-align: center;">Skills</p>
 
         <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
@@ -168,51 +185,43 @@
             <div class="swiper-slide">
               <div class="services-block">
                 <i class="bi bi-briefcase"></i>
-                <span>UI/UX DESIGN</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                <span>STRUCTURAL ANALYSIS</span>
+                <p class="separator">3D modeling, seismic analysis and structural design of earthquake resistant RCC/
+                  Steel buildings. </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="services-block">
                 <i class="bi bi-card-checklist"></i>
-                <span>BRAND IDENTITY</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                <span>PROBLEM SOLVING</span>
+                <p class="separator">Critical thinker in order to achieve efficient and better solutions to problems
+                </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="services-block">
-                <i class="bi bi-bar-chart"></i>
-                <span>WEB DESIGN</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                <i class="fa-solid fa-wand-magic-sparkles"></i> <span>GRAPHICS DESIGNING</span>
+                <p class="separator">Capable of projecting ideas with creative visual and textual content</p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="services-block">
                 <i class="bi bi-binoculars"></i>
-                <span>MOBILE APPS</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                <span>VISUALIZATION</span>
+                <p class="separator">Excellent in mentally understanding visual representation of technical details </p>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="services-block">
-                <i class="bi bi-brightness-high"></i>
-                <span>Analytics</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
+                <i class="fa-solid fa-pencil"></i> <span>SHOP DRAWING</span>
+                <p class="separator">Adept in converting informations of construction documents to shop drawing with
+                  immaculate attention to detail.</p>
               </div>
             </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-calendar4-week"></i>
-                <span>PHOTOGRAPHY</span>
-                <p class="separator">To an English person, it will seem like simplified English,told me what </p>
-              </div>
-            </div><!-- End testimonial item -->
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -224,7 +233,9 @@
     <div class="paddsection" id="education">
       <div class="container">
         <div class="section-title text-center">
-          <h2>Academic Timeline</h2>
+          <h2 class="p-heading"
+            style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Academic
+            Timeline</h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
@@ -251,7 +262,9 @@
     <div class="paddsection" style="background-color: #f7f7f7;">
       <div class="container">
         <div class="section-title text-center">
-          <h2>Professional Timeline</h2>
+          <h2 class="p-heading"
+            style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Professional
+            Timeline</h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
@@ -274,11 +287,56 @@
       </div>
     </div>
 
+    <section id="projects" class="paddsection">
+      <h2 class="p-heading"
+        style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;text-transform: uppercase;">
+        Projects</h2>
+
+      <div class="project">
+        <div class="project-image">
+          <img src="/assets/img/test.jpg"
+            alt="Seismic Analysis and Structural Design of Multi-story Commercial Building">
+        </div>
+        <div class="project-content">
+          <h3>Seismic Analysis and Structural Design of Multi-story Commercial Building</h3>
+          <!-- <p><strong>Description:</strong> Loreum.</p> -->
+          <ul>
+            <li>Executed a final year project in 2020, demonstrating expertise in structural element modeling,
+              analysis, and detailing
+              as per Indian Standard codes (IS 456:2000, IS 1893:2016, IS 13920:1993).</li>
+            <li>Employed industry-standard software tools, including ETABS, AUTOCAD, and MS Excel, showcasing
+              structural engineering
+              and drafting proficiency.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="project alternate">
+        <div class="project-content">
+          <h3>Next.js Application with File Upload Support</h3>
+          <p><strong>Description:</strong> Built a Next.js application with support for CSV and XLSX file uploads.
+            Implemented file processing and data visualization.</p>
+          <p><strong>Technologies Used:</strong> Next.js, React, CSV/XLSX Parsing Libraries</p>
+          <ul>
+            <li>Multi-file upload support</li>
+            <li>Data visualization and analysis</li>
+            <li>Responsive design</li>
+          </ul>
+        </div>
+        <div class="project-image">
+          <img src="path/to/image2.jpg" alt="Next.js Application with File Upload Support">
+        </div>
+      </div> -->
+
+    </section>
+
     <!-- technical skill -->
-    <div class="paddsection">
+    <section class="paddsection">
       <div class="container">
         <div class="overview-section">
-          <h1 style="text-align: center;margin: 10px 0px;text-transform: uppercase;">Technical Overview</h1>
+          <h1 class="p-heading"
+            style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Technical
+            Overview</h1>
           <div class="technical-overview">
             <div class="text-container">
               <div class="image-container">
@@ -375,34 +433,21 @@
           </div>
         </div>
       </div>
-    </div>
-
-
-
+    </section>
 
     <!-- ======= Portfolio Section ======= -->
-    <div class="paddsection" id="certification">
-      <div id="portfolio" class="paddsection">
-
+    <section class="paddsection" id="certification">
+      <div class="paddsection">
         <div class="container">
           <div class="section-title text-center">
-            <h2>Awards / Certifications</h2>
+            <h2 class="p-heading"
+              style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Awards /
+              Certifications</h2>
           </div>
         </div>
 
         <div class="container">
-
-          <!-- <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-              
-              </ul>
-            </div>
-          </div> -->
-
           <div class="row portfolio-container">
-
             <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-app">
               <img src="assets/img/certificates/Picture2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -498,76 +543,78 @@
         </div>
 
       </div>
+    </section>
 
-      <!-- ======= Journal Section ======= -->
-      <div id="journal" class="text-left paddsection">
 
-        <div class="container">
-          <div class="section-title text-center">
-            <h2>journal</h2>
-          </div>
+    <!-- ======= Journal Section ======= -->
+    <div id="journal" class="text-left paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>journal</h2>
         </div>
+      </div>
 
-        <div class="container">
-          <div class="journal-block">
-            <div class="row">
+      <div class="container">
+        <div class="journal-block">
+          <div class="row">
 
-              <div class="col-lg-4 col-md-6">
-                <div class="journal-info">
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
 
-                  <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img"></a>
+                <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img"></a>
 
-                  <div class="journal-txt">
+                <div class="journal-txt">
 
-                    <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                    <p class="separator">To an English person, it will seem like simplified English
-                    </p>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div class="journal-info">
-
-                  <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img"></a>
-
-                  <div class="journal-txt">
-
-                    <h4><a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                    <p class="separator">To an English person, it will seem like simplified English
-                    </p>
-
-                  </div>
+                  <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
+                  <p class="separator">To an English person, it will seem like simplified English
+                  </p>
 
                 </div>
+
               </div>
-
-              <div class="col-lg-4 col-md-6">
-                <div class="journal-info">
-
-                  <a href="blog-single.html"><img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img"></a>
-
-                  <div class="journal-txt">
-
-                    <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                    <p class="separator">To an English person, it will seem like simplified English
-                    </p>
-
-                  </div>
-
-                </div>
-              </div>
-
             </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
+                  <p class="separator">To an English person, it will seem like simplified English
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+
+                <a href="blog-single.html"><img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img"></a>
+
+                <div class="journal-txt">
+
+                  <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
+                  <p class="separator">To an English person, it will seem like simplified English
+                  </p>
+
+                </div>
+
+              </div>
+            </div>
+
           </div>
         </div>
+      </div>
 
-      </div><!-- End Journal Section -->
+    </div><!-- End Journal Section -->
 
-      <!-- ======= Contact Section ======= -->
-      <!-- <div id="contact" class="paddsection">
+    <!-- ======= Contact Section ======= -->
+    <!-- <div id="contact" class="paddsection">
       <div class="container">
         <div class="contact-block1">
           <div class="row">
@@ -637,60 +684,60 @@
     </div>End Contact Section -->
 
 
-      <div class="paddsection" id="contact_me">
-        <div class="container">
-          <div class="section-title text-center">
-            <h1 style="text-align: center;margin: 10px 0px;text-transform: uppercase;">Contact Me</h1>
-          </div>
+    <div class="paddsection" id="contact_me">
+      <div class="container contact-us" style="position: relative; overflow: hidden;">
+        <div class="section-title text-center">
+          <h1 class="p-heading"
+            style="color: #f7f7f7;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;z-index: 10;">
+            Contact Me
+          </h1>
         </div>
-        <div class="container contact-us" style="position: relative;overflow: hidden;">
-          <img src="assets/img/contour_line.svg"
-            style="height: 100%;width: 100%;position: absolute;top: 0;left: 0;z-index: 0;" />
-          <div class="contact-detail" style="z-index: 10;">
-            <div class="detail-ind">
-              <div class="padded-img">
+        <img src="assets/img/c_Us.jpg"
+          style="height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 0;filter: opacity(0.4);" />
+        <div class="contact-detail" style="z-index: 10;">
+          <div class="detail-ind">
+            <div class="padded-img">
+              <a href="mailto://Ssilwal4538@conestogac.on.ca" style="color: inherit;text-decoration: none;">
                 <img src="assets/img/mdi--envelope.svg" alt="mail" height="30" />
-              </div>
-              <div>
-                <h2>
-                  Email
-                </h2>
-                <h4>
-                  Ssilwal4538@conestogac.on.ca </h4>
-              </div>
+              </a>
             </div>
-            <div class="detail-ind">
-              <div class="padded-img">
-                <img src="assets/img/ic--baseline-phone.svg" alt="mail" height="30" />
-              </div>
-              <div>
-                <h2>
-                  Phone
-                </h2>
-                <h4>
-                  (437) 232-5419 </h4>
-              </div>
+            <div>
+              <h2>Email</h2>
+              <h4>Ssilwal4538@conestogac.on.ca</h4>
             </div>
-            <div class="detail-ind">
-              <div class="padded-img">
-                <img src="assets/img/mdi--linkedin.svg" alt="mail" height="30" />
-              </div>
-              <div>
-                <h2>
-                  Linkedin
-                </h2>
-                <h4>
-                  www.linkedin.com/in/sujan-silwal
-                </h4>
-              </div>
+          </div>
+          <div class="detail-ind">
+            <div class="padded-img">
+              <a href="tel://(437) 232-5419" style="color: inherit;text-decoration: none;">
+                <img src="assets/img/ic--baseline-phone.svg" alt="phone" height="30" />
+              </a>
+            </div>
+            <div>
+              <h2>Phone</h2>
+              <h4>(437) 232-5419</h4>
+            </div>
+          </div>
+          <div class="detail-ind">
+            <div class="padded-img">
+              <a href="https://www.linkedin.com/in/sujan-silwal" style="color: inherit;text-decoration: none;">
+                <img src="assets/img/mdi--linkedin.svg" alt="linkedin" height="30" />
+              </a>
+            </div>
+            <div>
+              <h2>Linkedin</h2>
+              <h4>www.linkedin.com/in/sujan-silwal</h4>
             </div>
           </div>
         </div>
       </div>
+
+    </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <div id="footer" class="text-center">
+    <button type="button" class="btn rounded-sm" style="margin: 15px 0px;"><a
+        href="/assets/files/sujan-silwal-coop-cv-zehrs.docx" style="color: inherit;">Download CV</a></button>
     <div class="container">
       <div class="socials-media text-center">
 

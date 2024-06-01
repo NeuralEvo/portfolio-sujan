@@ -1600,7 +1600,7 @@ blockquote {
 .overview-section .image-container img {
   height: 100%;
   border-radius: 10px;
-  object-fit: contain; /* Ensures the image covers the container proportionally */
+  object-fit: contain;
 }
 
 .overview-section .text-container {
@@ -1637,7 +1637,6 @@ blockquote {
   color: white;
   transition: all 0.3s ease-in-out;
 }
-
 .contact-us {
   border-radius: 12px;
   border: 2px solid black;
@@ -1665,10 +1664,9 @@ blockquote {
   flex-wrap: wrap;
   margin: 20px 0;
   gap: 10px;
-  /* Add gap for spacing between items */
 }
 
-.contact-us > .contact-detail > div {
+.contact-us > .contact-detail > .detail-ind {
   flex: 1 1 calc(33.333% - 20px);
   min-width: 250px;
   padding: 10px;
@@ -1680,6 +1678,7 @@ blockquote {
   position: relative;
   margin: 20px;
 }
+
 .contact-us .contact-detail .padded-img {
   display: flex;
   justify-content: center;
@@ -1692,8 +1691,12 @@ blockquote {
   width: 50px;
   border-radius: 50%;
   background-color: white;
+  transition: all 0.3s ease-in-out;
 }
-
+.contact-us .contact-detail .padded-img:hover {
+  background-color: #6c757d;
+  transition: all 0.3s ease-in-out;
+}
 .cursor-pointer {
   cursor: pointer;
 }
