@@ -110,6 +110,10 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+.subtitle{
+  color: #6772e5;
+  font-style: stretch;
+}
 
 .form-control {
   background-color: transparent;
@@ -502,7 +506,7 @@ p {
   font-size: 18px;
   letter-spacing: 1.5px;
   margin-top: 0;
-  max-width: 400px;
+  max-width: 500px;
   margin-bottom: 30px;
   text-transform: capitalize;
   color: #fff;
@@ -705,6 +709,10 @@ p {
   margin-right: 0;
 }
 
+.img-certificate{
+  width: 400px;
+  height: 300px;
+}
 #certification .portfolio-item {
   margin-bottom: 30px;
 }
