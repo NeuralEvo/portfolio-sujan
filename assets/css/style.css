@@ -10,8 +10,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #ffffff;
-  color: #898989;
+  background: black;
+  color: white;
   font-family: "Poppins", helvetica;
   font-size: 15px;
   font-weight: 300;
@@ -111,7 +111,7 @@ p {
   text-transform: uppercase;
 }
 .subtitle{
-  color: #6772e5;
+  color: yellow;
   font-style: stretch;
 }
 
@@ -201,7 +201,6 @@ p {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color: #fff;
   top: -100%;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
 }
@@ -223,7 +222,7 @@ p {
 }
 
 #header .logo a {
-  color: #898989;
+  color: white;
 }
 
 #header .logo img {
@@ -267,7 +266,6 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: #7e7d7d;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -353,7 +351,6 @@ p {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #4b4a4a;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -506,7 +503,7 @@ p {
   font-size: 18px;
   letter-spacing: 1.5px;
   margin-top: 0;
-  max-width: 500px;
+  max-width: 600px;
   margin-bottom: 30px;
   text-transform: capitalize;
   color: #fff;
@@ -590,13 +587,12 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
   padding-top: 120px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #FFEA00;
 }
 
 #about .div-img-bg .about-img img {
@@ -605,8 +601,8 @@ p {
   margin-top: -60px;
   margin-left: 40px;
   height: 400px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  /* -o-object-fit: cover;
+  object-fit: cover; */
 }
 
 #about .about-descr .p-heading {
@@ -634,22 +630,22 @@ p {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #292929;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
   display: block;
+  color: yellow;
 }
 
 .services-block .separator {
   margin: 0;
   font-size: 13px;
   line-height: 22px;
+  color: white;
 }
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
   line-height: 44px;
 }
 
@@ -712,6 +708,7 @@ p {
 .img-certificate{
   width: 400px;
   height: 300px;
+
 }
 #certification .portfolio-item {
   margin-bottom: 30px;
@@ -1767,7 +1764,7 @@ blockquote {
   width: max-content;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .vertical-floating-navbar {
     display: none;
   }

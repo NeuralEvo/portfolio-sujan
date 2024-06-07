@@ -10,8 +10,7 @@
 .content {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  color: black; 
+  position: relative; 
   width: 100%; 
 }
 .right-column {
@@ -37,5 +36,9 @@
 }
 .course {
   font-weight: bold;
-  color: black;
+}
+@media (max-width: 600px) {
+  .left-column{
+    margin-left: 0%;
+  }
 }

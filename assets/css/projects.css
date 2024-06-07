@@ -1,7 +1,6 @@
 #projects {
   margin: 2rem auto;
   padding: 1rem;
-  background: #fff;
 }
 
 .project-container .project {
@@ -42,13 +41,11 @@
 }
 
 .project-container .project h3 {
-  color: #333;
   margin-top: 0;
   margin-bottom: 30px;
 }
 
 .project-container .project p {
-  color: #333;
   margin: 0.5rem 0;
 }
 
@@ -58,11 +55,10 @@
 }
 
 .project-container .project ul li {
-  color: #333;
   margin-bottom: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 810px) {
   #projects {
     padding: 0.5rem;
   }

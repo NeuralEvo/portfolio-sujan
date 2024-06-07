@@ -34,6 +34,8 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
@@ -123,7 +125,7 @@
   </nav>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top " id="home">
+  <header id="header" class="fixed-top bg-gray-900" id="home">
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo"
@@ -147,58 +149,48 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="home">
-    <div id="hero" class="home">
+    <div id="hero" class="home px-6">
 
       <div class="container">
         <div class="hero-content">
           <h1>I'm <span class="typed" data-typed-items="SUJAN SILWAL., Civil Engineer."></span>
           </h1>
-          <p>Civil Engineer,Project Cordinator,Site Engineer</p>
-
+          <p>Civil Engineer,Project Cordinator,Project Engineer</p>
           <ul class="list-unstyled list-social">
-            <li><a target="_blank" href="https://www.facebook.com/su.zan.9250"><i class="bi bi-facebook"></i></a></li>
-            <li><a target="_blank" href="https://www.instagram.com/sujan_silwal/"><i class="bi bi-instagram"></i></a>
+            <li><a target="_blank" href="https://www.facebook.com/su.zan.9250"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/sujan_silwal/"><i class="fa-brands fa-instagram"></i></a>
             </li>
-            <li><a target="_blank" href="www.linkedin.com/in/sujan-silwal"><i class="bi bi-linkedin"></i></a></li>
+            <li><a target="_blank" href="www.linkedin.com/in/sujan-silwal"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a target="_blank" href="https://x.com/sujansilwa36481"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-
           </ul>
         </div>
       </div>
     </div><!-- End Hero -->
   </section>
-  <main>
+  <main class="mb-[400px]">
 
     <!-- ======= About Section ======= -->
-    <div class="paddsection" id="about">
+    <div class="paddsection px-6" id="about">
       <div class="container">
         <div class="row justify-content-between">
 
           <div class="col-lg-4 ">
             <div class="div-img-bg">
               <div class="about-img">
-                <img src="assets/img/me.jpeg" class="img-responsive" alt="me">
+                <img src="assets/img/me.jpeg" class="cover md:fill lg:cover" alt="me">
               </div>
             </div>
           </div>
 
           <div class="col-lg-7">
             <div class="about-descr">
-              <p class="p-heading" style="color: #292929;font-weight: 500;font-size: 40px;">About <span class="subtitle">Me</span></p>
-
-              <p style="color: #292929;font-weight: 500;">I am a civil engineer passionate about creating functional and
-                visually appealing
-                designs. With around 3 years of
-                experience, I ensure safety compliance and excel in both independent and team environments. I hold a
-                bachelor's degree
-                in civil engineering and am pursuing a Construction Management Graduate Certificate. I am skilled in
-                health and safety
-                legislation, construction drawings, cost estimation, and scheduling. I constantly seek opportunities to
-                learn and
-                showcase my skills with meticulous attention to detail.
+              <p class="p-heading mt-2 text-white" style="color: #292929;font-weight: 500;font-size: 40px;">About <span class="subtitle">Me</span></p>
+              <p style="color: white;font-weight: 500;" class="mt-4 mb-2">
+                Hey there! I'm Sujan Silwal a civil engineer driven by my love for crafting structures seamlessly blending functionality with captivating aesthetics. From skyscrapers to bridges, I'm constantly looking for opportunities to learn and showcase my skills, paying meticulous attention to every detail.<br>
+                With a perfect balance of individual dedication and strong teamwork skills, I'm committed to delivering nothing but the best in every project. Join me on this exciting journey where each construction project isn't just a task but a canvas for innovation and excellence! 
+                
               </p>
-              <button type="button" class="btn rounded-md"><a href="/assets/files/sujan_silwal.docx"
-                  style="color: inherit;">Download CV</a></button>
+              <a href="/assets/files/Sujan_Silwal_coop_resume.pdf" download>  <button type="button" class=" text-white text-base rounded px-2 py-2 bg-yellow-400 border-2 border-yellow-400 hover:bg-black hover:text-yellow-400">Download CV</button></a>
             </div>
 
           </div>
@@ -206,16 +198,17 @@
       </div>
     </div><!-- End About Section -->
 
+    <!-- ACADEMIC TIMELINE -->
     <div class="paddsection" id="education">
       <div class="container">
         <div class="section-title text-center">
-          <h2 class="p-heading" style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Academic <span class="subtitle">Timeline</span></h2>
+          <h2 class="p-heading" style="color:white;font-weight: 500;font-size: 40px;text-align: center;">Academic <span class="subtitle">Timeline</span></h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
             <div class="content" >
               <div class="left-column">
-                <span>2024 - Present</span>
+                <span class="text-[#FFEA00]">2024 - Present</span>
               </div>
               <div class="right-column">
                 <span class="course">Construction Management Post Graduate Certificate</span><br>
@@ -226,12 +219,34 @@
           <div class="timeline-item">
             <div class="content">
               <div class="left-column">
-                <span>2016 - 2020</span>
+                <span class="text-[#FFEA00]">2016 - 2020</span>
               </div>
               <div class="right-column">
                 <span class="course">Bachelor of Civil Engineering</span><br>
                 <span>Kathmandu Engineering College</span><br>
                 <span>Affiliated to Tribhuwan University</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="content">
+              <div class="left-column">
+                <spanclass="text-[#FFEA00]" class="text-[#FFEA00]">2014 - 2016</spanclass=>
+              </div>
+              <div class="right-column">
+                <span class="course">High School(+2)</span><br>
+                <span>National School of Sciences (NIST)</span><br>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="content">
+              <div class="left-column">
+                <span class="text-[#FFEA00]">2004 - 2014</span>
+              </div>
+              <div class="right-column">
+                <span class="course">Schooling</span><br>
+                <span>Nepal Police School</span>
               </div>
             </div>
           </div>
@@ -241,10 +256,10 @@
  
 
     <!-- ======= Skills Section ======= -->
-    <div id="skills" >
-      <div class="container" >
-        <p class="p-heading"
-          style="color: #292929;font-weight: 500;font-size: 40px;padding: 60px 0px;text-align: center;">Skills</p>
+    <div id="skills" class="px-6 paddsection ">
+      <div class="container " >
+        <p class="p-heading text-white"
+          style="font-weight: 500;font-size: 40px;padding: 60px 0px;text-align: center;">Skills</p>
 
         <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
@@ -295,13 +310,13 @@
     <div class="paddsection" id="timeline">
       <div class="container">
         <div class="section-title text-center">
-          <h2 class="p-heading" style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Professional <span class="subtitle">Timeline</span></h2>
+          <h2 class="p-heading" style="color:white;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Professional <span class="subtitle">Timeline</span></h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
             <div class="content" >
               <div class="left-column">
-                <span>October 2021- 2022 August</span>
+                <span class="text-[#FFEA00]">October 2021- 2022 August</span>
               </div>
               <div class="right-column">
                 <span class="course">Civil Designer, Construction Inspector</span><br>
@@ -312,7 +327,7 @@
           <div class="timeline-item">
             <div class="content">
               <div class="left-column">
-                <span>2020 October-2021 November</span>
+                <span class="text-[#FFEA00]">2020 October-2021 November</span>
               </div>
               <div class="right-column">
                 <span class="course">Site Engineer</span><br>
@@ -324,9 +339,10 @@
       </div>
     </div>
 
-    <section id="projects" class="paddsection project-container">
+    <!-- PROJECTS -->
+    <section id="projects" class="paddsection project-container px-6">
       <h2 class="p-heading"
-        style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;text-transform: uppercase;">
+        style="color:white;font-weight: 500;font-size: 40px;text-align: center;text-transform: uppercase;">
         Projects</h2>
 
       <div class="project">
@@ -335,7 +351,7 @@
             alt="Seismic Analysis and Structural Design of Multi-story Commercial Building">
           </div>
         <div class="project-content">
-          <h3>Seismic Analysis and Structural Design of Multi-story Commercial Building</h3>
+          <h3 class="font-bold">Seismic Analysis and Structural Design of Multi-story Commercial Building</h3>
           <!-- <p><strong>Description:</strong> Loreum.</p> -->
           <ul>
             <li>Executed a final year project in 2020, demonstrating expertise in structural element modeling,
@@ -347,24 +363,6 @@
           </ul>
         </div>
       </div>
-
-      <!-- <div class="project alternate">
-        <div class="project-content">
-          <h3>Next.js Application with File Upload Support</h3>
-          <p><strong>Description:</strong> Built a Next.js application with support for CSV and XLSX file uploads.
-            Implemented file processing and data visualization.</p>
-          <p><strong>Technologies Used:</strong> Next.js, React, CSV/XLSX Parsing Libraries</p>
-          <ul>
-            <li>Multi-file upload support</li>
-            <li>Data visualization and analysis</li>
-            <li>Responsive design</li>
-          </ul>
-        </div>
-        <div class="project-image">
-          <img src="path/to/image2.jpg" alt="Next.js Application with File Upload Support">
-        </div>
-      </div> -->
-
     </section>
 
     <!-- technical skill -->
@@ -372,7 +370,7 @@
       <div class="container">
         <div class="overview-section">
           <h1 class="p-heading"
-            style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Technical
+            style="color: white;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Technical
             <span class="subtitle">Overview</span></h1>
           <div class="technical-overview">
             <div class="text-container">
@@ -450,248 +448,74 @@
     </section>
 
     <!-- ======= Awards Section ======= -->
-    <section class="paddsection" id="certification">
-      <div class="paddsection">
+    <section class="paddsection px-6 mb-40" id="certification">
         <div class="container">
           <div class="section-title text-center">
             <h2 class="p-heading"
-              style="color: #292929;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Awards /
-             <span class="subtitle">Certifications</span> </h2>
+              style="color: white;font-weight: 500;font-size: 40px; margin-bottom: 60px;text-align: center;">Awards /
+             <span class="subtitle text-4xl md:text-[40px]">Certifications</span> </h2>
           </div>
         </div>
-        <div class="container">
-          <div class="row portfolio-container">
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-web">
+        <div class="flex justify-center mx-auto">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3  gap-x-20 gap-y-6  max-w-[400px] md:max-w-screen-2xl justify-start place-items-start">
+            <div class="">
               <img src="assets/img/certificates/Picture3.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture3.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="Web 3"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Completion of AUTOCAD Training</span>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-app">
-              <img src="assets/img/certificates/Picture4.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 2"><i class="fa-solid fa-eye"></i></a>
-              </div>
+            <div class="">
+              <img src="assets/img/certificates/Picture4.jpg"  class="img-certificate" alt="">
+              <span class="text-xl text-gray-200">Completion of SAP-2000 Training</span>
+
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-app">
+            <div class="">
               <img src="assets/img/certificates/Picture10.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture10.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 2"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Participation in Yoga</span>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-app">
+            <div class="">
               <img src="assets/img/certificates/Picture8.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture8.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 1"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Participation in Helping Hands</span>
+
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-app">
+            <div class="">
               <img src="assets/img/certificates/Picture13.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture13.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 3"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Participation in Stick Bridge</span>
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-web">
+            <div class="">
               <img src="assets/img/certificates/Picture9.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture9.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="Web 3"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Event Coordinator of Model Competition</span>
+
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-app">
+            <div class="">
               <img src="assets/img/certificates/Picture2.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture2.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="App 1"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Compeltion of Valuation Training</span>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-web">
+            <div class="">
               <img src="assets/img/certificates/Picture12.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture12.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="Web 2"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Participation in AAWAS & ACCESS Exhibition</span>
             </div>
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-card">
+            <div class="">
               <img src="assets/img/certificates/Picture5.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture5.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="Card 2"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Participation in CESA Program</span>
             </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item cursor-pointer filter-web">
+            <div class="">
               <img src="assets/img/certificates/Picture6.jpg" class="img-certificate" alt="">
-              <div class="portfolio-info">
-                <h4>Certificate Of Appreciation</h4>
-                <a href="assets/img/certificates/Picture6.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link" title="Web 2"><i class="fa-solid fa-eye"></i></a>
-              </div>
+              <span class="text-xl text-gray-200">Completion of Tenure in Helping Hands</span>
             </div>
-        
-         
           </div>
         </div>
-      </div>
     </section>
+    
+  </main><!-- End #main -->
 
+  <!-- ======= Footer ======= -->
+ 
 
-    <!-- ======= Journal Section ======= -->
-    <!-- <div id="journal" class="text-left paddsection">
-
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>journal</h2>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="journal-block">
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <a href="blog-single.html"><img src="assets/img/blog-post-1.jpg" class="img-responsive" alt="img"></a>
-
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single.html">SO LETS MAKE THE MOST IS BEAUTIFUL</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
-                  </p>
-
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <a href="blog-single.html"><img src="assets/img/blog-post-2.jpg" class="img-responsive" alt="img"></a>
-
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single.html">WE'RE GONA MAKE DREAMS COMES</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
-                  </p>
-
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <a href="blog-single.html"><img src="assets/img/blog-post-3.jpg" class="img-responsive" alt="img"></a>
-
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single.html">NEW LIFE CIVILIZATIONS TO BOLDLY</a></h4>
-                  <p class="separator">To an English person, it will seem like simplified English
-                  </p>
-
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>End Journal Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <!-- <div id="contact" class="paddsection">
-      <div class="container">
-        <div class="contact-block1">
-          <div class="row">
-
-            <div class="col-lg-6">
-              <div class="contact-contact">
-
-                <h2 class="mb-30">GET IN TOUCH</h2>
-
-                <ul class="contact-details">
-                  <li><span>Waterloo, ON, N2J 0G4</span></li>
-                  <li><span>
-                      <a href="tel://(437)-232-5419" style="color: inherit;">(437) 232-5419</a></span></li>
-                  <li><span><a href="mailto://Ssilwal4538@conestogac.on.ca"
-                        style="color: inherit;">Ssilwal4538@conestogac.on.ca</a></span></li>
-                </ul>
-
-              </div>
-            </div>
-
-            <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row gy-3">
-
-                  <div class="col-lg-6">
-                    <div class="form-group contact-block1">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                        required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                        required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="mt-0">
-                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                  </div>
-
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>End Contact Section -->
-
-
-    <div class="paddsection" id="contact_me">
+  <footer class="bg-gray-900 px-6  relative  pt-32">
+    <div id="contact_me" class=" mt-12 mb-12 absolute inset-x-0 -top-3/4 ">
+     <div class="" id="contact_me">
       <div class="container contact-us" style="position: relative; overflow: hidden;">
         <div class="section-title text-center">
           <h1 class="p-heading"
@@ -739,37 +563,39 @@
       </div>
 
     </div>
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <div id="footer" class="text-center">
-    <button type="button" class="btn rounded-sm" style="margin: 15px 0px;"><a
-        href="/assets/files/sujan-silwal-coop-cv-zehrs.docx" style="color: inherit;">Download CV</a></button>
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a href="https://www.facebook.com/su.zan.9250"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/sujan_silwal/"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="www.linkedin.com/in/sujan-silwal"><i class="bi bi-linkedin"></i></a></li>
-        </ul>
-
-      </div>
-
-      <p>&copy; Copyright . All rights reserved.</p>
-
-      <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
-      -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
     </div>
-  </div><!-- End Footer -->
+    <div class="relative mt-40 lg:mt-20 z-10 mx-auto w-full p-6 md:p-0 max-w-screen-2xl py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+          <span class="self-center text-3xl text-white">Sujan Silwal</span><br>
+          <span class="text-yellow-400">Civil Engineer</span>
+        </div>
+        <div>
+          <h3 class="text-white text-2xl font-normal mb-2">Download CV</h3>
+         <a href="/assets/files/Sujan_Silwal_coop_resume.pdf" download>
+          <button type="button" class=" text-white text-base rounded px-2 py-2 bg-yellow-400 border-2 border-yellow-400 hover:bg-black hover:text-yellow-400">
+            Download CV
+          </button>
+        </a>
+                  </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024. All Rights Reserved.
+        </span>
+        <div class="flex text-xl sm:justify-center gap-8 sm:mt-0">
+        <a target="_blank" href="https://www.facebook.com/su.zan.9250"><i class="fa-brands fa-facebook hover:text-yellow-400"></i></a>
+        <a target="_blank" href="https://www.instagram.com/sujan_silwal/"><i class="fa-brands fa-instagram hover:text-yellow-400"></i></a> 
+        <a target="_blank" href="www.linkedin.com/in/sujan-silwal"><i class="fa-brands fa-linkedin hover:text-yellow-400"></i></a>
+        <a target="_blank" href="https://x.com/sujansilwa36481"><i class="fa-brands fa-square-x-twitter hover:text-yellow-400"></i></a>
+        </div>
+      </div>
+    </div>
+    </footer>
+  
+  
+
+ 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
