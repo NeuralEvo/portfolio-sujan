@@ -520,6 +520,8 @@ p {
   font-size: 25px;
 }
 
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -708,8 +710,8 @@ p {
 .img-certificate{
   width: 400px;
   height: 300px;
-
 }
+
 #certification .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1585,7 +1587,7 @@ blockquote {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
 }
 
 .overview-section .image-container,
