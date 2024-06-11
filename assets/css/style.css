@@ -116,10 +116,9 @@ p {
 }
 
 .form-control {
-  background-color: transparent;
-  border: 1px solid #999;
+  border: 1px solid white;
+  background: rgb(141, 132, 132);
   border-radius: 0;
-  color: #999999;
   font-size: 12px;
   font-weight: 500;
   height: 50px;
@@ -133,6 +132,8 @@ p {
 .form-control:focus {
   box-shadow: none;
   outline: 0 none;
+  background: black;
+  color: white;
 }
 
 .paddsection {
@@ -992,7 +993,8 @@ p {
 
 /* main content */
 .main-content {
-  background: #f7f7f7;
+  background: black;
+  color: white;
 }
 
 .main-content .container-main {
@@ -1006,7 +1008,7 @@ p {
 }
 
 .container-main .block-main .content-main {
-  background: #fff none repeat scroll 0 0;
+  background: black none repeat scroll 0 0;
   display: inline-block;
   width: 100%;
 }
@@ -1097,13 +1099,10 @@ p {
 }
 
 /* Commonts form */
-.cmt {
-  background: #fff;
-}
+
 
 blockquote {
   padding: 40px;
-  background-color: #f2f2f2;
   margin: 30px 0;
   border: none;
   border-left: 4px solid #b8a07e;
@@ -1159,6 +1158,9 @@ blockquote {
 
 .credits {
   font-size: 13px;
+}
+.footer-image{
+  background-image: url("../img/footer.jpg");
 }
 
 /** Width between 1200x to 0
@@ -1701,7 +1703,8 @@ blockquote {
   transition: all 0.3s ease-in-out;
 }
 .contact-us .contact-detail .padded-img:hover {
-  background-color: #6c757d;
+  background-color: rgb(54, 54, 155);
+  color: white;
   transition: all 0.3s ease-in-out;
 }
 .cursor-pointer {
