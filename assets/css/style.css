@@ -91,6 +91,19 @@ p {
   border-radius: 25px;
 }
 
+.circle-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#b3b6b7 ;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
 .btn:hover,
 .btn:focus {
   color: #333;
@@ -112,8 +125,38 @@ p {
 }
 .subtitle{
   color: yellow;
-  font-style: stretch;
+  font-family: "Caveat", cursive;
 }
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-300%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(300%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated-name {
+  display: inline-block;
+  animation: slideDown 2s ease-out;
+}
+.animated-subtitle{
+  display: inline-block;
+  animation: slideUp 2s ease-out;
+}
+
 
 .form-control {
   border: 1px solid white;
@@ -1219,6 +1262,8 @@ blockquote {
   #about .about-descr .p-heading {
     font-size: 20px;
   }
+
+  
 
   #about .about-descr .separator {
     max-width: 100%;

@@ -17,7 +17,10 @@
   <link
     href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i"
     rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -158,8 +161,8 @@
         <div class="hero-content">
           <h1 class="animated-name">I'm <span class="typed" data-typed-items="SUJAN SILWAL., Civil Engineer."></span>
           </h1>
-          <p>Civil Engineer,Project Cordinator,Project Engineer</p>
-          <ul class="list-unstyled list-social">
+          <p class="animated-subtitle">Civil Engineer,Project Cordinator,Project Engineer</p>
+          <ul class="list-unstyled list-social animated-subtitle">
             <li><a target="_blank" href="https://www.facebook.com/su.zan.9250"><i class="fa-brands fa-facebook"></i></a>
             </li>
             <li><a target="_blank" href="https://www.instagram.com/sujan_silwal/"><i
@@ -172,12 +175,15 @@
           </ul>
         </div>
       </div>
-    </div><!-- End Hero -->
+    </div>
   </section>
+
+ 
   <main class="mb-[400px] px-8  lg:px-32">
 
+
     <!-- ======= About Section ======= -->
-    <div class="paddsection px-6" id="about">
+    <div class="paddsection" id="about">
       <div class="container">
         <div class="row justify-content-between">
 
@@ -190,10 +196,17 @@
           </div>
 
           <div class="col-lg-7">
+            
             <div class="about-descr">
-              <p class="p-heading mt-2 text-white" style="color: #292929;font-weight: 500;font-size: 40px;">About <span
-                  class="subtitle">Me</span></p>
-              <p style="color: white;" class="mt-4 mb-2 text-xl">
+              <div class="flex justify-start px-14 relative mt-4">
+                <h1 class="p-heading  text-white w-16 h-16 flex justify-center  z-10 bg-slate-800 rounded-full" style="font-weight: 500;font-size: 40px;">About<span
+                  class="subtitle ml-4">Me</span> </h1>
+              </div>
+              
+            
+                  
+                  
+                  <p style="color: white;" class="mt-4 mb-2 md:text-base">
                <span class="font-semibold">🛠️ Passionate Civil Engineer & Design Enthusiast 🌟</span> <br>
                 Hey there! I'm Sujan Silwal a civil engineer driven by my love for crafting structures seamlessly
                 blending functionality with captivating aesthetics. From skyscrapers to bridges, I'm constantly looking
@@ -216,9 +229,9 @@
     <!-- ACADEMIC TIMELINE -->
     <div class="paddsection" id="education">
       <div class="container">
-        <div class="section-title text-center">
-          <h2 class="p-heading" style="color:white;font-weight: 500;font-size: 40px;text-align: center;">Academic <span
-              class="subtitle">Timeline</span></h2>
+        <div class="uppercase flex-wrap  text-center flex mx-auto justify-center relative">
+          <h2 class="  w-16 h-16 flex justify-center items-center text-3xl md:text-4xl  z-10 bg-slate-800 rounded-full text-center" style="color:white;font-weight: 500;margin-bottom:60px;text-align: center;">Academic <span
+              class="subtitle ml-2">Timeline</span></h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
@@ -275,7 +288,7 @@
     <div id="skills" class="px-6 paddsection ">
       <div class="container ">
         <p class="p-heading text-white" style="font-weight: 500;font-size: 40px;padding: 60px 0px;text-align: center;">
-          Skills</p>
+          <span class="text-yellow-400">S</span>kills</p>
 
         <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
@@ -325,10 +338,10 @@
     <!-- PROFESSIONAL TIMELINE -->
     <div class="paddsection" id="timeline">
       <div class="container">
-        <div class="section-title text-center">
-          <h2 class="p-heading"
-            style="color:white;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Professional
-            <span class="subtitle">Timeline</span>
+        <div class="uppercase text-center relative flex justify-center">
+          <h2 class="  text-2xl md:text-4xl w-16 h-16 flex justify-center items-center  z-10 bg-slate-800 rounded-full"
+            style="color:white;font-weight: 500;margin-bottom: 60px;text-align: center;">Professional
+            <span class="subtitle ml-2">Timeline</span>
           </h2>
         </div>
         <div class="timeline">
@@ -374,7 +387,7 @@
     <section id="projects" class="paddsection project-container px-6">
       <h2 class="p-heading"
         style="color:white;font-weight: 500;font-size: 40px;text-align: center;text-transform: uppercase;">
-        Projects</h2>
+        <span class="text-yellow-400">P</span>rojects</h2>
 
       <div class="project">
         <div class="project-image">
@@ -398,10 +411,10 @@
 
     <!-- VOLUNTEER -->
     <div class=" lg:px-32">
-      <h1 class="text-center text-3xl font-semibold mb-4">Volunteer</h1>
-      <div class="flex flex-col-reverse md:grid md:grid-cols-2 ">
-        <div>
-          <img src="assets/img/volunteer/hero-img.png" alt="" class="px-6 md:px-0">
+      <h1 class="text-center text-3xl font-semibold mb-4"><span class="text-yellow-400">V</span>olunteer</h1>
+      <div class="flex flex-col-reverse md:grid md:grid-cols-2">
+        <div class="mx-auto my-auto">
+          <img src="assets/img/volunteer/Untitled.jpeg" alt="" class="px-6 md:px-0">
         </div>
         <div class="flex flex-col space-y-2 lg:justify-center lg:items-center p-4">
           <h1 class="font-semibold text-xl">Volunteer, Grand River Chapter, Professional Engineers Ontario (PEO)
@@ -430,7 +443,7 @@
       </div>
       <div class=" flex flex-col-reverse md:grid md:grid-cols-2 mt-12 gap-x-20">
         <div>
-          <img src="assets/img/volunteer/img3.jpg" alt="" class="w-full px-6 md:px-0">
+          <img src="assets/img/volunteer/habitat.webp" alt="" class="w-full px-6 md:px-0">
         </div>
         <div class="flex flex-col space-y-2 lg:justify-center lg:items-center p-4">
           <h1 class="font-semibold text-xl">Volunteer - Habitat for Humanity
@@ -451,14 +464,14 @@
             Design competitions, achieving a 30% increase in participant involvement and positive feedback.
           </p>
         </div>
-        <div>
-          <img src="assets/img/volunteer/image-4.png" alt="" class="px-6 md:px-0">
+        <div class="md:flex md:justify-center">
+          <img src="assets/img/volunteer/cesa.webp" alt="" class="px-6 md:px-0">
         </div>
 
       </div>
       <div class="flex flex-col-reverse md:grid md:grid-cols-2 mt-12 justify-between">
-        <div>
-          <img src="assets/img/volunteer/image5.jpg" alt="" class="w-full px-6 md:px-0">
+        <div class="md:flex md:justify-center">
+          <img src="assets/img/volunteer/help.webp" alt="" class=" px-6 rounded md:px-0">
         </div>
         <div class="flex flex-col space-y-2 lg:justify-center lg:items-center p-4">
 
@@ -478,10 +491,13 @@
     <section class="paddsection" id="technology">
       <div class="container">
         <div class="overview-section">
-          <h1 class="p-heading"
-            style="color: white;font-weight: 500;font-size: 40px;margin-bottom: 60px;text-align: center;">Technical
-            <span class="subtitle">Overview</span>
+          <div class="relative flex justify-center">
+            <h1 class="p-heading text-3xl md:text-4xl w-16 h-16 flex justify-center items-center  z-10 bg-slate-800 rounded-full"
+            style="color: white;font-weight: 500;margin-bottom: 60px;text-align: center;">Technical
+            <span class="subtitle ml-2">Overview</span>
           </h1>
+          </div>
+         
           <div class="technical-overview">
             <div class="text-container">
               <div class="image-container">
@@ -560,17 +576,18 @@
                 <img src="assets/img/oracle.png" alt="Technical Image">
               </div>
               <h4>Primavera Risk</h4>
-              <p>Adept at utilizing SketchUp for intuitive 3D modeling, creating detailed visualizations and design
-                prototypes with efficiency.
+              <p>
+                Certified in Primavera Risk Analysis, demonstrating proficiency in assessing and managing project risks to ensure successful project outcomes.
               </p>
             </div>
             <div class="text-container">
               <div class="image-container">
-                <img src="assets/img/oracle.png" alt="Technical Image">
+                <img src="assets/img/skills/7c3db98c-dd66-4667-8b85-36723da35c3e.webp" alt="Technical Image">
               </div>
               <h4>RS Means</h4>
-              <p>Adept at utilizing SketchUp for intuitive 3D modeling, creating detailed visualizations and design
-                prototypes with efficiency.
+              <p>
+                Certified in RS Means, highlighting expertise in construction cost estimation and management, ensuring accurate project budgeting and financial planning.
+            
               </p>
             </div>
 
@@ -650,11 +667,11 @@
     <!-- ======= Awards Section ======= -->
     <div class="paddsection md:px-20 mb-40" id="certification">
       <div class="container">
-        <div class="section-title text-center">
-          <h2 class="p-heading"
-            style="color: white;font-weight: 500;font-size: 40px; margin-bottom: 60px;text-align: center;">Awards /
-            <span class="subtitle text-4xl md:text-[40px]">Certifications</span>
-          </h2>
+        <div class="relative uppercase flex   justify-center">
+          <h1 class="p-heading  text-2xl md:text-4xl w-16 h-16 flex justify-center items-center  z-10 bg-slate-800 rounded-full"
+          style="color: white;font-weight: 500;margin-bottom: 60px;text-align: center;">Awards 
+          <span class="subtitle ml-2">&Certifications</span>
+        </h1>
         </div>
       </div>
       <span class="text-center mb-4 text-3xl flex items-center justify-center mx-auto">Training</span>
@@ -778,14 +795,14 @@
   <!-- ======= Footer ======= -->
 
 
-  <footer class="footer-image px-8 md:px-20 relative  pt-32">
+  <footer class="  px-8 md:px-20 relative  pt-32" style="background-image: url(assets/img/footer.jpg);">
     <div id="contact_me" class="mt-12 mb-12 absolute inset-x-0 -top-3/4 ">
       <div class="" id="contact_me">
         <div class="container contact-us" style="position: relative; overflow: hidden;">
           <div class="section-title text-center">
             <h1 class="p-heading"
               style="color: #f7f7f7;font-weight: 500;font-size: 50px;margin-bottom: 60px;text-align: center;z-index: 10; position: relative;">
-              Contact Me
+              Contact <span class="subtitle">Me</span>
             </h1>
           </div>
           <img src="assets/img/footer-bg.png"
@@ -794,7 +811,6 @@
             <div class="detail-ind">
               <div class="padded-img ">
                 <a href="suzann1020@gmail.com">
-                  <!-- <img src="assets/img/mdi--envelope.svg" alt="mail" height="30" /> -->
                   <i class="fa-regular fa-envelope text-blue-700 hover:text-white text-xl"></i>
                 </a>
               </div>
@@ -825,12 +841,57 @@
                 <h4>www.linkedin.com/in/sujan-silwal</h4>
               </div>
             </div>
+            <div class="detail-ind">
+              <div class="padded-img">
+                <a href="https://www.linkedin.com/in/sujan-silwal" style="color: inherit;text-decoration: none;">
+                  <i class="fa-brands fa-linkedin text-blue-700 hover:text-white text-xl"></i>
+                </a>
+              </div>
+              <div class="text-2xl">
+                <h2>Twitter</h2>
+                <h4>www.linkedin.com/in/sujan-silwal</h4>
+              </div>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
-    <div class="  relative mt-52 lg:mt-20 z-10 mx-auto w-full p-6 md:p-0 max-w-screen-2xl py-6 lg:py-8">
+    <!-- <div class="absolute w-full inset-x-0 -top-3/4  bg-red-700 z-20" style="background-image: url(assets/img/footer-bg.png);">
+      <div class=" text-center">
+        <h1 class="p-heading"
+          style="color: #f7f7f7;font-weight: 500;font-size: 50px;margin-bottom: 60px;text-align: center;z-index: 10; position: relative;">
+          Contact <span class="subtitle">Me</span>
+        </h1>
+      </div>
+      <div>
+        <div class="border-dashed border-2 border-sky-500">
+          <div class="padded-img">
+            <a href="suzann1020@gmail.com">
+              <i class="fa-regular fa-envelope text-blue-700 hover:text-white text-xl"></i>
+            </a>
+          </div>
+          <div class="text-2xl">
+            <h2>Email</h2>
+            <h4>suzann1020@gmail.com</h4>
+          </div>
+        </div>
+        <div class="border-dashed border-2 border-sky-500">
+          <div class="">
+            <a href="suzann1020@gmail.com">
+              <i class="fa-regular fa-envelope text-blue-700 hover:text-white text-xl"></i>
+            </a>
+          </div>
+          <div class="text-2xl">
+            <h2>Email</h2>
+            <h4>suzann1020@gmail.com</h4>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+
+    <div class=" relative mt-52  lg:mt-20 z-10 mx-auto w-full p-6 md:p-0 max-w-screen-2xl py-6 lg:py-8">
       <div class=" md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <span class="self-center text-4xl text-white font-semibold">Sujan Silwal</span><br>
@@ -856,8 +917,8 @@
               class="fa-brands fa-instagram hover:text-yellow-400"></i></a>
           <a target="_blank" href="www.linkedin.com/in/sujan-silwal"><i
               class="fa-brands fa-linkedin hover:text-yellow-400"></i></a>
-          <a target="_blank" href="https://x.com/sujansilwa36481"><i
-              class="fa-brands fa-square-x-twitter hover:text-yellow-400"></i></a>
+              <a target="_blank" href="https://x.com/sujansilwa36481"><i
+                class="fa-brands fa-square-x-twitter"></i></a>
               
         </div>
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024. All Rights Reserved.
