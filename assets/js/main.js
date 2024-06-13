@@ -260,5 +260,36 @@
       clickable: true
     }
   });
+ 
 
+
+  const animatedElements = select('.animatedHeading', true);
+  const animateOnScroll = () => {
+    animatedElements.forEach(el => {
+      if (isInViewport(el)) {
+        el.classList.add('animate');
+      }
+    });
+  }
+
+  const isInViewport = (el) => {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  window.addEventListener('load', animateOnScroll);
+  onscroll(document, animateOnScroll);
+
+
+
+  
+
+  
+
+  
 })()

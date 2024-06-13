@@ -127,6 +127,10 @@ p {
   color: yellow;
   font-family: "Caveat", cursive;
 }
+
+
+
+   /* Animations  */
 @keyframes slideDown {
   0% {
     opacity: 0;
@@ -155,6 +159,85 @@ p {
 .animated-subtitle{
   display: inline-block;
   animation: slideUp 2s ease-out;
+}
+@keyframes slideUpHeading {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animatedHeading {
+  display: inline-block;
+  opacity: 0; /* Initially hide the element */
+  transform: translateY(100%); /* Initially position the element out of view */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animatedHeading.animate {
+  animation: slideUpHeading 1s ease-out forwards; /* Apply animation when in view */
+}
+
+
+
+.footer-container {
+  position: relative;
+  border: 2px dashed white;
+  padding: 16px;
+  color: white;
+  background: rgb(71, 71, 71);
+}
+
+.icon-container {
+  position: absolute;
+  top: -33%;
+  right: 20px;
+  background-color: white;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.icon-container:hover {
+  background-color: #1e293b; 
+}
+
+.icon {
+  color: #1d4ed8; 
+  font-size: 32px;
+  transition: color 0.3s ease;
+}
+
+.icon-container:hover .icon {
+  color: #f6f6f7; 
+}
+.footerBackground-container {
+  background-image: url("../img/footer-bg.png");
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  width: 100%; /* Ensures the container takes the full width */
+  height: auto; /* Adjusts height automatically based on content */
+}
+
+.text-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.text-container h4 {
+  font-size: 18px;
 }
 
 
