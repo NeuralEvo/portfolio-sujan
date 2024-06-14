@@ -175,13 +175,52 @@ p {
   display: inline-block;
   opacity: 0; /* Initially hide the element */
   transform: translateY(100%); /* Initially position the element out of view */
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
 .animatedHeading.animate {
-  animation: slideUpHeading 1s ease-out forwards; /* Apply animation when in view */
+  animation: slideUpHeading 1.5s ease-out forwards; /* Apply animation when in view */
+}
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animatedRight {
+  display: inline-block;
+  opacity: 0; /* Initially hide the element */
+  transform: translateX(100%); /* Initially position the element out of view */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
 }
 
+.animatedRight.animate {
+  animation: slideRight 1.5s ease-out forwards; /* Apply animation when in view */
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animatedLeft {
+  display: inline-block;
+  opacity: 0; /* Initially hide the element */
+  transform: translateX(100%); /* Initially position the element out of view */
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.animatedLeft.animate {
+  animation: slideLeft 1.5s ease-out forwards; /* Apply animation when in view */
+}
 
 
 .footer-container {

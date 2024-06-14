@@ -263,33 +263,44 @@
  
 
 
-  const animatedElements = select('.animatedHeading', true);
-  const animateOnScroll = () => {
-    animatedElements.forEach(el => {
-      if (isInViewport(el)) {
-        el.classList.add('animate');
+  // const animatedElements = select('.animatedHeading', true);
+  // const animateOnScroll = () => {
+  //   animatedElements.forEach(el => {
+  //     if (isInViewport(el)) {
+  //       el.classList.add('animate');
+  //     }
+  //   });
+  // }
+
+  // const isInViewport = (el) => {
+  //   const rect = el.getBoundingClientRect();
+  //   return (
+  //     rect.top >= 0 &&
+  //     rect.left >= 0 &&
+  //     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+  //     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  //   );
+  // }
+
+  // window.addEventListener('load', animateOnScroll);
+  // onscroll(document, animateOnScroll);
+
+
+
+  
+
+  
+  const elements = document.querySelectorAll('.animated-name, .animated-subtitle, .animatedHeading, .animatedRight, .animatedLeft');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target); // Stop observing after animation is applied
       }
     });
-  }
+  }, { threshold: 0.1 });
 
-  const isInViewport = (el) => {
-    const rect = el.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-
-  window.addEventListener('load', animateOnScroll);
-  onscroll(document, animateOnScroll);
-
-
-
-  
-
-  
-
+  elements.forEach(element => observer.observe(element));
   
 })()
