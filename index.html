@@ -38,6 +38,16 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="https://cdn.tailwindcss.com"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GBLTP7RVBY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GBLTP7RVBY', {
+    page_path: window.location.pathname,
+  });
+</script>
 
 
 </head>
@@ -116,7 +126,7 @@
       </a>
     </div>
     <div class="parent-navlink">
-      <a href="#contact_me">
+      <a href="#contact">
         <div class="rounded-navlink">
           <i class="fa-solid fa-envelope" style="font-size: 14px;"></i>
         </div>
@@ -145,7 +155,7 @@
           <li><a class="nav-link  scrollto" href="#certification">Certification</a></li>
           <li><a class="nav-link  scrollto" href="#projects">Experience</a></li>
           <li><a class="nav-link  scrollto" href="blog-single.html">Blog</a></li>
-          <li><a class="nav-link scrollto" href="#contact_me">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -736,15 +746,15 @@
   <!-- ======= Footer ======= -->
 
 
-  <footer class=" px-8 md:px-20 relative rounded  md:pt-20" style="background-image: url(assets/img/footer.jpg);">
-    <div class="footerBackground-container relative md:absolute   max-w-screen-2xl py-12 mx-auto inset-x-0 -top-3/4 md:-top-[250px]">
+  <footer id="contact" class=" px-8 md:px-20 relative rounded  md:pt-20" style="background-image: url(assets/img/footer.jpg);">
+  <div  class="footerBackground-container  relative md:absolute   max-w-screen-2xl py-12 mx-auto inset-x-0 -top-3/4 md:-top-[250px]">
       <div class=" text-center">
         <h1 class="p-heading "
           style="color: #f7f7f7;font-weight: 500;font-size: 50px;margin-bottom: 60px;text-align: center;z-index: 10; position: relative;">
           Contact <span class="subtitle">Me</span>
         </h1>
       </div>
-      <div class="relative grid md:grid-cols-2 mx-auto justify-center px-12   gap-12 text-white">
+      <div class="relative grid md:grid-cols-2 mx-auto justify-center items-center  px-16   gap-12 text-white">
           <div class="footer-container animatedHeading">
             <div class="icon-container">
               <a href="mailto:suzann1020@gmail.com" target="_blank">
@@ -820,7 +830,7 @@
           <a target="_blank" href="https://x.com/sujansilwa36481"><i class="fa-brands fa-square-x-twitter hover:text-yellow-400"></i></a>
 
         </div>
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024. All Rights Reserved.
+        <span class="text-sm mb-4 text-gray-500 sm:text-center dark:text-gray-400">© 2024. All Rights Reserved.
         </span>
       </div>
     </div>
